@@ -1,0 +1,35 @@
+# Directory ArbolesBinarios
+ArbolesBinarios/.vs
+ArbolesBinarios/bin
+ArbolesBinarios/obj
+
+# Directory Bicolas
+Bicolas/.vs
+Bicolas/bin
+Bicolas/obj
+
+# Directory Colas
+Colas/.vs
+Colas/bin
+Colas/obj
+
+# Directory ListasCircularesSimples
+ListasCircularesSimples/.vs
+ListasCircularesSimples/bin
+ListasCircularesSimples/obj
+
+# Directory ListasDobles
+ListasDobles/.vs
+ListasDobles/bin
+ListasDobles/obj
+
+# Directory listasSimples
+listasSimples/.vs
+listasSimples/bin
+listasSimples/obj
+
+# Directory Pilas
+Pilas/.vs
+Pilas/bin
+Pilas/obj
+
