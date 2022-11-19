@@ -12,7 +12,7 @@ namespace Grafos
 {
     class Edge
     {
-        public int costo;
+        public int coste;
         public Node? Destination;
         public Edge? Next;
     }
@@ -70,7 +70,7 @@ namespace Grafos
                 }
             }
         }
-        public void AddEdge(int origin, int destination, int costo)
+        public void AddEdge(int origin, int destination, int coste)
         {
             Edge newEdge, lastEdge;
             Node nodeOrigin, nodeDestination;
@@ -82,7 +82,7 @@ namespace Grafos
                     if (getEdge(nodeOrigin, nodeDestination) == null) {
                         newEdge = new Edge();
                         newEdge.Destination = nodeDestination;
-                        newEdge.costo = costo;
+                        newEdge.coste = coste;
                         newEdge.Next = null;
 
                         if (nodeOrigin.Adjacent == null)
@@ -108,7 +108,7 @@ namespace Grafos
                 edgeCurrent = nodeCurrent.Adjacent;
                 while (edgeCurrent != null) {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.Write($"costo {edgeCurrent.costo} ");
+                    Console.Write($"costo {edgeCurrent.coste} ");
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.Write($"valor {edgeCurrent.Destination.Data} ");
                     edgeCurrent = edgeCurrent.Next;
@@ -205,7 +205,7 @@ namespace Grafos
             Edge adjacencies;
 
             origin.IsVisited = true;
-            //Console.Write($"{origin.Data} ");
+            Console.Write($"{origin.Data} ");
 
             adjacencies = origin.Adjacent;
             while (adjacencies != null) {
